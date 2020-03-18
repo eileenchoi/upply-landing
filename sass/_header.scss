@@ -1,0 +1,24 @@
+@import "global";
+
+.site-header{
+    background-color: transparent;
+    position: fixed;
+    padding: 1rem;
+    width: 100%;
+    z-index: 100;
+    
+
+    .site-title{
+        display: none;
+    }
+
+    .main-navigation ul{
+        display: flex;
+        justify-content: center;
+
+        li{
+            padding: 0 1rem;
+        }
+    }
+
+}

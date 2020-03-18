@@ -1,0 +1,68 @@
+@import "global";
+
+main{
+    border: 2px dashed green;
+    background-color: $white;
+
+    .entry-content{
+        border: 2px solid red;
+        
+    }
+
+    .entry-title{
+        display: none;
+    }
+    .header-container{
+        border: 2px solid purple;
+        max-width: 1680px;
+        display: flex;
+
+        .img-inner{
+            border: 2px solid green;
+            width: 50%;
+        }
+        
+
+        .yellow img{
+            max-width: 15%;
+            position: relative;
+            bottom: 14rem;
+        }
+
+        .orange img{
+            max-width: 30%;
+            position: relative;
+            left: 15rem;
+            top: 4rem;
+            transform: rotate(26deg);
+
+        }
+
+        .logo img{
+            max-width: 15%;
+            position: relative;
+            top: 7rem;
+            right: 38rem;
+        }
+
+        .text{
+            position: relative;
+            bottom: 7rem;
+            right: 50rem;
+            display: inline-block;
+            max-width: 600px;
+            color: $green;   
+        }
+
+        .form-container{
+            width: 50%;
+            border: 2px solid cyan;
+        }
+    }    // header-container
+
+    form{
+        border: 2px solid green;
+        max-width: 600px;
+        
+    }
+}
