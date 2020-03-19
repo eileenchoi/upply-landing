@@ -7,3 +7,46 @@ $blue: #203a51;
 $yellow: #d4a929;
 $black: #2b2b2b;
 $orange: #ff8b3b;
+
+
+$border-radius: 3px;
+
+
+body{
+    background-color: $white;
+    background-image: url('/wp-content/uploads/2020/03/Untitled-2.png');
+    background-image: url('/wp-content/uploads/2020/03/Untitled-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 40%;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.page{
+    margin: 0;
+}
+input[type=text], 
+input[type=email], 
+input[type=url], 
+input[type=password], 
+input[type=search], 
+input[type=number], 
+input[type=tel], 
+input[type=range], 
+input[type=date], 
+input[type=month], 
+input[type=week], 
+input[type=time], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=color]{
+    max-width: 300px;
+    color: $green !important;
+}
+
+textarea{
+    background: transparent;
+    border: 2px solid $yellow;
+    color: $green !important;
+}

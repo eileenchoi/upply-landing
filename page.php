@@ -18,28 +18,19 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<div class="header-container">
-			<div class="img-inner">
-				<span class="yellow img">
-					<img src="/wp-content/uploads/2020/03/ASSETS-UPPLY-YELLOW-06-e1584542045186.png" alt="">
-				</span>
-				<span class="orange img">
-					<img src="/wp-content/uploads/2020/03/ASSETS-UPPLY-ORANGE-02.png" alt="">
-				</span>
-				<span class="logo img">
-					<img src="/wp-content/uploads/2020/03/UPPLY-LOGO-NAVY-09.png" alt="">
-				</span>
-				<div class="text">
-					<h1>Cheeseburger With Bacon</h1>
-					<p>The palatable sensation we lovingly refer to as The Cheeseburger has a 
-					distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned 
-					greatness.
-					</p>
-				</div>
-			</div><!-- img-inner -->
+			<div class="text">
+				<h1>Cheeseburger With Bacon</h1>
+				<p>The palatable sensation we lovingly refer to as The Cheeseburger has a 
+				distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned 
+				greatness.
+				</p>
+			</div>
+			<span><img src="/wp-content/uploads/2020/03/logo-500.png" alt=""></span>
 			<div class="form-container">
 				<?php the_field('shortcode'); ?>
 			</div>
-		</div><!-- header-container -->
+		</div>
+			
 		<?php
 		while ( have_posts() ) :
 			the_post();

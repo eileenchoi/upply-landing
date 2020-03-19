@@ -524,8 +524,7 @@ table {
 --------------------------------------------------------------*/
 button,
 input[type=button],
-input[type=reset],
-input[type=submit] {
+input[type=reset] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -538,18 +537,26 @@ input[type=submit] {
 }
 button:hover,
 input[type=button]:hover,
-input[type=reset]:hover,
-input[type=submit]:hover {
+input[type=reset]:hover {
   border-color: #ccc #bbb #aaa;
 }
 button:active, button:focus,
 input[type=button]:active,
 input[type=button]:focus,
 input[type=reset]:active,
-input[type=reset]:focus,
-input[type=submit]:active,
-input[type=submit]:focus {
+input[type=reset]:focus {
   border-color: #aaa #bbb #bbb;
+}
+
+input[type=submit] {
+  padding: 5px 50px;
+  border-radius: 3px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  background: #d4a929;
+  color: #fdfdf9;
+  border: 1px solid #d4a929;
 }
 
 input[type=text],
@@ -568,7 +575,6 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea {
-  color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
@@ -953,6 +959,46 @@ object {
 /*--------------------------------------------------------------
 # Partials
 --------------------------------------------------------------*/
+body {
+  background-color: #fdfdf9;
+  background-image: url("/wp-content/uploads/2020/03/Untitled-2.png");
+  background-image: url("/wp-content/uploads/2020/03/Untitled-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 40%;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.page {
+  margin: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color] {
+  max-width: 300px;
+  color: #21555a !important;
+}
+
+textarea {
+  background: transparent;
+  border: 2px solid #d4a929;
+  color: #21555a !important;
+}
+
 .site-header {
   background-color: transparent;
   position: fixed;
@@ -971,58 +1017,181 @@ object {
   padding: 0 1rem;
 }
 
-main {
-  border: 2px dashed green;
+body {
   background-color: #fdfdf9;
+  background-image: url("/wp-content/uploads/2020/03/Untitled-2.png");
+  background-image: url("/wp-content/uploads/2020/03/Untitled-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 40%;
+  background-attachment: fixed;
+  margin: 0;
 }
-main .entry-content {
-  border: 2px solid red;
+
+.page {
+  margin: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color] {
+  max-width: 300px;
+  color: #21555a !important;
+}
+
+textarea {
+  background: transparent;
+  border: 2px solid #d4a929;
+  color: #21555a !important;
+}
+
+main {
+  background-color: transparent;
 }
 main .entry-title {
   display: none;
 }
 main .header-container {
-  border: 2px solid purple;
-  max-width: 1680px;
+  max-width: 100%;
   display: flex;
+  background: transparent;
+  margin: 0 auto;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-evenly;
+  padding: 0 10rem;
 }
-main .header-container .img-inner {
-  border: 2px solid green;
-  width: 50%;
-}
-main .header-container .yellow img {
-  max-width: 15%;
+main .header-container img {
+  width: 200px;
   position: relative;
-  bottom: 14rem;
+  top: 12rem;
+  right: 35rem;
 }
-main .header-container .orange img {
-  max-width: 30%;
-  position: relative;
-  left: 15rem;
-  top: 4rem;
-  transform: rotate(26deg);
-}
-main .header-container .logo img {
-  max-width: 15%;
-  position: relative;
-  top: 7rem;
-  right: 38rem;
+main .header-container img:hover {
+  transform: rotate(360deg);
+  transition: 0.6s ease-in-out;
 }
 main .header-container .text {
   position: relative;
-  bottom: 7rem;
-  right: 50rem;
-  display: inline-block;
-  max-width: 600px;
+  display: block;
   color: #21555a;
+  max-width: 600px;
 }
 main .header-container .form-container {
-  width: 50%;
-  border: 2px solid cyan;
+  width: calc(450px - 1rem);
+  padding: 1.5rem;
+  display: flex;
+  z-index: 99;
+  position: relative;
+  align-items: center;
 }
-main form {
-  border: 2px solid green;
-  max-width: 600px;
+main .header-container .form-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: #21555a;
+  margin-top: 6rem;
+  right: 8rem;
+  position: relative;
+  background-color: #fdfdf9;
+  border: 2px solid #d4a929;
+  border-radius: 3px;
+  width: 450px;
+}
+main .header-container .form-container form span.wpcf7-list-item {
+  padding: 10px;
+}
+main .header-container .form-container form .fields {
+  margin-bottom: 1rem;
+}
+main .header-container .form-container form .fields-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .header-container .form-container form .fields-container input[type=text],
+main .header-container .form-container form .fields-container input[type=email] {
+  max-width: 170px;
+  border-radius: 0;
+  border-bottom: 2px solid #d4a929;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: transparent;
+}
+main .header-container .form-container form .radio span label {
+  padding: 15px 0;
+}
+main .header-container .form-container form p {
+  margin: 0;
+  display: block;
+}
+
+input[type=submit] {
+  padding: 10px 50x !important;
+}
+
+body {
+  background-color: #fdfdf9;
+  background-image: url("/wp-content/uploads/2020/03/Untitled-2.png");
+  background-image: url("/wp-content/uploads/2020/03/Untitled-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 40%;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.page {
+  margin: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color] {
+  max-width: 300px;
+  color: #21555a !important;
+}
+
+textarea {
+  background: transparent;
+  border: 2px solid #d4a929;
+  color: #21555a !important;
+}
+
+.site-info {
+  padding: 10px;
+  text-align: center;
+  background-color: #fdfdf9;
+  margin: 0;
+  color: #21555a;
+}
+.site-info p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

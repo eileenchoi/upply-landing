@@ -1,7 +1,14 @@
+
+$white: #fdfdf9;
+$green: #21555a;
+$blue: #203a51;
+$yellow: #d4a929;
+$black: #2b2b2b;
+$orange: #ff8b3b;
+
 button,
 input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="reset"] {
 	border: 1px solid;
 	border-color: $color__border-button;
 	border-radius: 3px;
@@ -19,4 +26,17 @@ input[type="submit"] {
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
+}
+
+
+input[type="submit"]{
+	padding: 5px 50px;
+	border-radius: 3px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	background: $yellow;
+	color: $white;
+	border: 1px solid $yellow;
+	
 }
