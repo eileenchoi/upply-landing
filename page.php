@@ -19,13 +19,18 @@ get_header();
 		<main id="main" class="site-main">
 		<div class="header-container">
 			<div class="text">
-				<h1>Cheeseburger With Bacon</h1>
-				<p>The palatable sensation we lovingly refer to as The Cheeseburger has a 
-				distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned 
-				greatness.
-				</p>
+				<div class="text-inner">
+				<h1><?php the_field('heading') ?></h1>
+				<p><?php the_field('intro') ?></p>
+				<p class="disclaimer"><?php the_field('disclaimer') ?></p>
+				</div>
+				<?php 
+					$image = get_field('logo');
+					if( !empty( $image ) ): ?>
+						<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
 			</div>
-			<span><img src="/wp-content/uploads/2020/03/logo-500.png" alt=""></span>
+			
 			<div class="form-container">
 				<?php the_field('shortcode'); ?>
 			</div>

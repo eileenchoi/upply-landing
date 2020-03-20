@@ -2,23 +2,22 @@
 
 .site-header{
     background-color: transparent;
-    position: fixed;
-    padding: 1rem;
+    padding: 10px 1rem;
     width: 100%;
     z-index: 100;
+    display: flex;
+
+    img{
+        width: 100px;
+    }
     
 
     .site-title{
         display: none;
     }
 
-    .main-navigation ul{
-        display: flex;
-        justify-content: center;
-
-        li{
-            padding: 0 1rem;
-        }
+    .main-navigation{
+        display: none;
     }
 
 }
